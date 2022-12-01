@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show image</title>
+    <script src="https://kit.fontawesome.com/ce8e52b871.js" crossorigin="anonymous"></script>   
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/Lato-Regular.ttf" rel="stylesheet">
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+          <div class="container">
+              <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FirstCloudProject</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                  <ul class="navbar-nav flex-grow-1">
+
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" name="page1" href="#">PAGE1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page2.html" name="page2">PAGE2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page3.html" name="page3">PAGE3</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page4.html" name="page4">PAGE4</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+<body class="background-img2">
+   
+    <!-- <div class="img2-form"> -->
+      <form class="cv" action="{{ url_for('ind1') }}" method="POST" enctype="multipart/form-data">
+        
+        <input type="text" placeholder="Enter the key" name="key" id="exampleInputfname" required name ="keyy" style="    width: 300px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        padding-left: 18px;
+        margin-top: 106px;
+        font-size: 15px;
+        margin-left: 640px;">
+        <button type="submit" class="btn-1" 
+        style="    width: 80px;
+        height: 35px;
+        border-radius: 25px;
+        border: none;
+        background-color: #b7b1a0;
+        color: #fdf5e5;
+        margin-left: 960px;
+        margin-top: -38px;
+        position: absolute;">Enter</button>
+        <div class="cont">
+            <img id="img" />
+        </div>
+        <!-- <textarea id="w3review" name="w3review" rows="9" cols="51"> -->
+         {{  c  }}
+         <img src="/static/img/{{res}}" style="height: 260px;width: 390px;margin-left: 659px;">
+          <!-- </textarea>     -->
+           </form>
+          <!-- </div> -->
+
+
+
+        <!-- <div class="mb-3">
+          <label for="uploadCV" >Enter Key</label>
+          <input type="text"  id="exampleInputfname" placeholder="Enter KEY"  required name ="keyy">
+        </div> -->
+          
+          <!-- <button type="submit" class="btn-1" 
+         style="border-color:#0e0505;color:#1a0505
+          ;width: 100%;height: 45px; ;margin-top: 10px;font-size: larger; font-weight: bold; font-family: DroidArabicKufiRegular;">
+          <i class="fas fa-location-arrow  Services-icon"></i>
+          <span>Press to show image</span></button>
+
+           <textarea id="w3review" name="w3review" rows="9" cols="51"> -->
+             <!-- {{  c  }}
+              <img src="/static/img/{{res}}" style="height: 260px;width: 390px;">
+             </textarea>     -->
+         <!-- </form>
+    </div>   -->
+
+    <script src="../static/js/bootstrap.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>
